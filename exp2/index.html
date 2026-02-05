@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Aman Gound | AI Engineer</title>
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Segoe UI',sans-serif;scroll-behavior:smooth;}
+body{background:radial-gradient(circle at 20% 20%,#1e293b,#0b1120 60%);color:#e2e8f0;line-height:1.6;overflow-x:hidden;}
+body::before{content:"";position:fixed;width:100%;height:100%;background-image:radial-gradient(2px 2px at 20% 30%,white,transparent),radial-gradient(1px 1px at 70% 60%,white,transparent),radial-gradient(2px 2px at 40% 80%,white,transparent),radial-gradient(1px 1px at 90% 20%,white,transparent),radial-gradient(2px 2px at 10% 70%,white,transparent);opacity:.15;z-index:0;}
+.planet-container{position:fixed;top:50%;right:-120px;transform:translateY(-50%);width:450px;height:450px;z-index:1;pointer-events:none;}
+.planet{width:100%;height:100%;border-radius:50%;background:radial-gradient(circle at 30% 30%,#38bdf8,#1e3a8a 60%,#0b1120);box-shadow:inset -50px -50px 90px rgba(0,0,0,.85),0 0 80px rgba(56,189,248,.5),0 0 150px rgba(56,189,248,.2);position:relative;animation:planetSpin 60s linear infinite;}
+.planet::after{content:"";position:absolute;width:100%;height:100%;border-radius:50%;background:radial-gradient(circle at 70% 70%,transparent,rgba(0,0,0,.8));}
+@keyframes planetSpin{0%{transform:translateY(0) rotate(0);}50%{transform:translateY(-25px) rotate(180deg);}100%{transform:translateY(0) rotate(360deg);}}
+nav{position:fixed;width:100%;background:rgba(10,15,30,.85);backdrop-filter:blur(8px);padding:15px 10%;display:flex;justify-content:space-between;z-index:5;border-bottom:1px solid rgba(56,189,248,.2);}
+nav a{color:#e2e8f0;margin-left:20px;text-decoration:none;transition:.3s;}nav a:hover{color:#38bdf8;}
+section{padding:50px 10%;position:relative;z-index:5;}
+h1{font-size:48px;}h2{font-size:28px;color:#38bdf8;margin-bottom:20px;}
+.hero{display:flex;justify-content:space-between;align-items:center;gap:40px;height:75vh;}
+.hero-left{max-width:55%;}.hero-right{text-align:right;}
+.stat{background:rgba(30,41,59,.6);padding:15px 25px;margin:10px 0;border-radius:10px;border-left:4px solid #38bdf8;}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:20px;}
+.card{background:rgba(30,41,59,.6);padding:20px;border-radius:12px;border-left:4px solid #38bdf8;}
+.timeline{border-left:2px solid #38bdf8;padding-left:20px;}
+.t-item{margin-bottom:20px;}
+.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;}
+.skill-block{background:rgba(30,41,59,.6);padding:20px;border-radius:10px;}
+footer{text-align:center;padding:40px;border-top:1px solid rgba(56,189,248,.2);color:#94a3b8;}
+</style>
+</head>
+
+<body>
+
+<div class="planet-container"><div class="planet"></div></div>
+
+<section class="hero">
+  <div class="hero-left">
+    <h1 style="font-size:64px; font-weight:800; letter-spacing:2px;">
+      AMAN GOUND
+    </h1>
+    <h2 style="margin-top:10px;">AI & Machine Learning Engineer</h2>
+    <p style="margin-top:15px;">
+      Building scalable applications, intelligent systems, and real-world engineering solutions.
+    </p>
+  </div>
+
+  <div class="hero-right">
+    <div class="stat">2+ Industry Internships</div>
+    <div class="stat">Full-Stack Systems</div>
+    <div class="stat">AI & Backend Focus</div>
+  </div>
+</section>
+
+
+<section>
+  <h2>Summary</h2>
+  <div class="card">
+    AI & Machine Learning undergraduate with hands-on internship experience in frontend development and web technologies. Strong in Java, JavaScript, APIs, and full-stack systems. Serving as Webmaster Executive at ISTE SFIT leading technical initiatives and web management.
+  </div>
+</section>
+
+<section id="education">
+  <h2>Education</h2>
+  <div class="card">
+    B.E. Artificial Intelligence & Machine Learning<br>
+    St. Francis Institute of Technology, Mumbai (2024–2028)
+  </div>
+</section>
+
+<section id="experience">
+  <h2>Work Experience</h2>
+  <div class="timeline">
+    <div class="t-item"><b>Webmaster Executive — ISTE SFIT</b><br>Managing web infrastructure, frontend initiatives, and event technical operations.</div>
+    <div class="t-item"><b>Frontend Developer Intern — VirtuNexa</b><br>Built responsive UI components and frontend features.</div>
+    <div class="t-item"><b>Intern — Cloud Counselage Pvt. Ltd.</b><br>Worked on technical workflows and corporate development processes.</div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>Projects</h2>
+  <div class="grid">
+    <div class="card"><b>Full-Stack Web Applications</b><br>Node.js, APIs, HTML, CSS systems.</div>
+    <div class="card"><b>API & Web Scraping System</b><br>Automation tools and data processing logic.</div>
+    <div class="card"><b>AI & Programming Projects</b><br>Java & Python backend problem solving.</div>
+  </div>
+</section>
+
+<section>
+  <h2>Leadership & Activities</h2>
+  <div class="card">Webmaster — ISTE SFIT Technical Team</div>
+  <div class="card">Volunteer — NSS SFIT & SSR Initiative</div>
+</section>
+
+<section>
+  <h2>Certifications</h2>
+  <div class="grid">
+    <div class="card">Postman API Fundamentals</div>
+    <div class="card">Full Stack Development</div>
+    <div class="card">API with Web Scraping</div>
+    <div class="card">AI for Beginners — HP</div>
+    <div class="card">Tata Cybersecurity Simulation</div>
+    <div class="card">Generative AI</div>
+  </div>
+</section>
+
+<section id="skills">
+  <h2>Technical Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-block"><b>Languages</b><p>Java, JavaScript, Python</p></div>
+    <div class="skill-block"><b>Web</b><p>HTML, CSS, Node.js</p></div>
+    <div class="skill-block"><b>Concepts</b><p>APIs, Full-Stack Systems</p></div>
+    <div class="skill-block"><b>Tools</b><p>Postman, Git</p></div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  <div class="card">
+    📍 Mumbai, India<br>
+    📞 +91-XXXXXXXXXX<br>
+    📧 your@email.com<br>
+    🔗 LinkedIn | GitHub
+  </div>
+</section>
+
+<footer>© 2026 Aman Gound</footer>
+
+</body>
+</html>
+

@@ -1,0 +1,193 @@
+body {
+    background-color: rosybrown;
+    font-family: Arial, sans-serif;
+}
+
+.business-card {<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Segoe UI', sans-serif;
+        scroll-behavior: smooth;
+    }
+
+    body {
+        background: radial-gradient(circle at 20% 20%, #1e293b, #0b1120 60%);
+        color: #e2e8f0;
+        line-height: 1.6;
+        overflow-x: hidden;
+    }
+
+    /* ✨ Stars Layer */
+    body::before {
+        content: "";
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        background-image:
+            radial-gradient(2px 2px at 20% 30%, white, transparent),
+            radial-gradient(1px 1px at 70% 60%, white, transparent),
+            radial-gradient(2px 2px at 40% 80%, white, transparent),
+            radial-gradient(1px 1px at 90% 20%, white, transparent),
+            radial-gradient(2px 2px at 10% 70%, white, transparent);
+        opacity: 0.15;
+        z-index: -1;
+    }
+
+    section {
+        padding: 90px 10%;
+    }
+
+    h1, h2 {
+        margin-bottom: 20px;
+    }
+
+    h1 { 
+        font-size: 48px; 
+        text-shadow: 0 0 10px rgba(56,189,248,0.5);
+    }
+
+    h2 { 
+        font-size: 32px; 
+        color: #38bdf8; 
+        text-shadow: 0 0 8px rgba(56,189,248,0.4);
+    }
+
+    nav {
+        position: fixed;
+        width: 100%;
+        background: rgba(10, 15, 30, 0.85);
+        backdrop-filter: blur(8px);
+        padding: 15px 10%;
+        display: flex;
+        justify-content: space-between;
+        z-index: 1000;
+        border-bottom: 1px solid rgba(56,189,248,0.2);
+    }
+
+    nav a {
+        color: #e2e8f0;
+        margin-left: 20px;
+        text-decoration: none;
+        font-weight: 500;
+        transition: 0.3s;
+    }
+
+    nav a:hover {
+        color: #38bdf8;
+        text-shadow: 0 0 8px #38bdf8;
+    }
+
+    .hero {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .highlight { color: #38bdf8; }
+
+    .card {
+        background: rgba(30, 41, 59, 0.6);
+        backdrop-filter: blur(10px);
+        padding: 20px;
+        border-radius: 12px;
+        margin-bottom: 20px;
+        border-left: 4px solid #38bdf8;
+        box-shadow: 0 0 20px rgba(56,189,248,0.08);
+        transition: 0.3s;
+    }
+
+    .card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 25px rgba(56,189,248,0.2);
+    }
+
+    ul { margin-left: 20px; }
+
+    .skills span {
+        display: inline-block;
+        background: rgba(30, 41, 59, 0.7);
+        padding: 8px 14px;
+        margin: 5px;
+        border-radius: 6px;
+        font-size: 14px;
+        border: 1px solid rgba(56,189,248,0.2);
+        box-shadow: 0 0 8px rgba(56,189,248,0.1);
+    }
+
+    footer {
+        text-align: center;
+        padding: 40px 10%;
+        border-top: 1px solid rgba(56,189,248,0.2);
+        color: #94a3b8;
+    }
+</style>
+
+    width: 300px;
+    background-color: white;
+    padding: 20px;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 16px;
+}
+
+.profile-image {
+    max-width: 100%;
+}
+
+p {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+a {
+    text-decoration: none;
+}
+/* 🌍 Floating Planet — FIXED */
+.planet-container {
+    position: fixed;
+    top: 50%;
+    right: -120px;
+    transform: translateY(-50%);
+    width: 450px;
+    height: 450px;
+    z-index: 0; /* CHANGED from -1 */
+    pointer-events: none;
+}
+
+.planet {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: radial-gradient(circle at 30% 30%, #38bdf8, #1e3a8a 60%, #0b1120);
+    box-shadow:
+        inset -50px -50px 90px rgba(0,0,0,0.85),
+        0 0 80px rgba(56,189,248,0.5),
+        0 0 150px rgba(56,189,248,0.2);
+    animation: planetSpin 60s linear infinite;
+    position: relative;
+}
+
+/* 🌎 Realistic shadow layer */
+.planet::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: radial-gradient(circle at 70% 70%, transparent, rgba(0,0,0,0.8));
+}
+
+/* 🛰 Floating + rotation combined properly */
+@keyframes planetSpin {
+    0% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-25px) rotate(180deg); }
+    100% { transform: translateY(0px) rotate(360deg); }
+}
+
+
+
